@@ -1,0 +1,20 @@
+{
+  "name": "Porrón Personalizado",
+  "short_name": "Porrón",
+  "description": "Porrón personalizado con tu foto - Tradición española",
+  "icons": [
+    {
+      "src": "/porron/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/porron/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#C60B1E",
+  "background_color": "#FFC400",
+  "display": "standalone"
+}

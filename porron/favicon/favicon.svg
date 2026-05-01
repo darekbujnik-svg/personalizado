@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Tło w barwach Hiszpanii -->
+  <rect width="100" height="100" fill="#C60B1E"/> <!-- Czerwony -->
+  <rect y="25" width="100" height="50" fill="#FFC400"/> <!-- Żółty -->
+  
+  <!-- Obrys porróna -->
+  <path d="M30,20 Q50,10 70,20 L75,60 Q70,80 50,85 Q30,80 25,60 Z" 
+        fill="none" 
+        stroke="#000" 
+        stroke-width="2"/>
+  
+  <!-- Uchwyty -->
+  <rect x="25" y="40" width="5" height="15" rx="2" fill="#000"/>
+  <rect x="70" y="40" width="5" height="15" rx="2" fill="#000"/>
+  
+  <!-- Ustnik -->
+  <path d="M48,85 L52,85 L50,95 Z" fill="#000"/>
+</svg>

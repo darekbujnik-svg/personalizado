@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+Sitemap: http://if0_41337669.infinityfreeapp.com/porron/sitemap.xml
