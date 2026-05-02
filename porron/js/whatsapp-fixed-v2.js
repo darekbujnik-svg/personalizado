@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="footer-content-v2">
             <!-- 10% - Etsy Link -->
             <div class="etsy-section">
-                <a href="https://www.etsy.com/es/listing/989841459/bota-de-vino-personalizada-con-tu-foto" 
+                <a href="https://www.etsy.com/es/listing/597121131/porron-de-vino-personalizado-grabado-con-foto" 
                    class="etsy-link-v2" target="_blank">
                    <span class="link-icon-v2">🛒</span>
                    COMPRA
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         class="brutal-input-v2" 
                         placeholder="MENSAJE WHATSAPP..."
                         rows="1"
-                    >Hola, me interesa una bota de vino personalizada</textarea>
+                    >Hola, me interesa porrón de vino personalizado. \u00BFPuedo ver boceto antes de realizar pedido? </textarea>
                     
                     <div class="whatsapp-buttons-v2">
                         <button id="send-whatsapp-v2" class="btn-whatsapp-send-v2">
@@ -119,7 +119,7 @@ style.textContent = `
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    border-top: 4px solid #8b4513;
+    border-top: 1px solid #ffffff;
     font-family: 'IBM Plex Mono', monospace;
     z-index: 10000;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
@@ -152,14 +152,14 @@ style.textContent = `
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #8b4513;
+    color: #c41e3a;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 0.5rem 0.75rem;
-    border: 2px solid #8b4513;
+    border: 2px solid #c41e3a;
     background: rgba(0, 0, 0, 0.7);
     transition: all 0.2s;
     width: 100%;
@@ -167,7 +167,7 @@ style.textContent = `
 }
 
 .etsy-link-v2:hover {
-    background: #8b4513;
+    background: #c41e3a;
     color: #000000;
 }
 
@@ -217,7 +217,7 @@ style.textContent = `
 
 .btn-whatsapp-send-v2, .btn-whatsapp-open-v2 {
     padding: 0.5rem 1rem;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
     text-transform: uppercase;
@@ -229,24 +229,24 @@ style.textContent = `
 }
 
 .btn-whatsapp-send-v2 {
-    background: #25D366;
+   // background: #25D366;
     color: #000000;
 }
 
 .btn-whatsapp-send-v2:hover {
     background: #000000;
     color: #25D366;
-    border-color: #25D366;
+  //  border-color: #25D366;
 }
 
 .btn-whatsapp-open-v2 {
     background: #000000;
     color: #25D366;
-    border: 2px solid #25D366;
+  //  border: 2px solid #25D366;
 }
 
 .btn-whatsapp-open-v2:hover {
-    background: #25D366;
+ //   background: #25D366;
     color: #000000;
 }
 
@@ -271,9 +271,9 @@ style.textContent = `
 }
 
 .btn-toggle-v2 {
-    background: #8b4513;
+  //  background: #8b4513;
     color: #000000;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     width: 30px;
     height: 30px;
     font-size: 1rem;
@@ -287,8 +287,8 @@ style.textContent = `
 
 .btn-toggle-v2:hover {
     background: #000000;
-    color: #8b4513;
-    border-color: #8b4513;
+    color: #c41e3a;
+    border-color: #c41e3a;
 }
 
 /* Minimized state */
@@ -297,7 +297,7 @@ style.textContent = `
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(139, 69, 19, 0.7);
+   // background: rgba(139, 69, 19, 0.7);
     padding: 0.5rem;
     display: none;
     justify-content: center;
@@ -309,13 +309,13 @@ style.textContent = `
 }
 
 .footer-minimized-v2:hover {
-    background: #8b4513;
+   // background: #8b4513;
 }
 
 .btn-show-v2 {
     background: #000000;
     color: #ffffff;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     padding: 0.3rem 0.9rem;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
@@ -331,7 +331,7 @@ style.textContent = `
 }
 
 .btn-show-v2:hover {
-    background: #ffffff;
+    background: #ccc;
     color: #000000;
 }
 

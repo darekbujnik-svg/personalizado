@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiestas Españolas | Cultura, Tradición y Celebración</title>
-    <meta name="description" content="Descubre las fiestas más emblemáticas de España: San Fermín, Fallas, Semana Santa, Feria de Abril. Tradición, música y gastronomía.">
-    <meta name="keywords" content="fiestas españolas, San Fermín, Fallas, Semana Santa, Feria de Abril, tradiciones España, cultura española">
-    <meta name="author" content="Fiestas Españolas">
+    <meta name="description" content="Descubre las fiestas más emblemáticas de España: San Fermín, Fallas, Semana Santa, Feria de Abril. Tradición, vino y cultura española.">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fiestas-espanolas.porronpersonalizado.es/">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg+xml" href="../porron/favicon/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     
     <style>
-        /* Inline critical CSS for faster loading */
         :root {
             --bg-dark: #0a0a0a;
             --bg-card: #1a1a1a;
@@ -29,23 +26,17 @@
             --accent-blue: #2e8bff;
             --gradient: linear-gradient(135deg, #ff2e2e, #ffd700, #2e8bff);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            overflow-x: hidden;
-        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:var(--bg-dark); color:var(--text-primary); overflow-x:hidden; }
     </style>
+    
+    <meta property="og:title" content="Fiestas Españolas | Cultura y Tradición">
+    <meta property="og:description" content="Descubre las fiestas emblemáticas de España: San Fermín, Fallas, Semana Santa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fiestas-espanolas.porronpersonalizado.es/">
+    <meta property="og:locale" content="es_ES">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="glass-nav">
         <div class="nav-container">
             <a href="#" class="logo">FIESTAS<span>ESPAÑOLAS</span></a>
@@ -53,15 +44,11 @@
                 <a href="#fiestas">Fiestas</a>
                 <a href="#tradiciones">Tradiciones</a>
                 <a href="#calendario">Calendario</a>
-                <a href="../porron/" class="nav-cta">Porrón</a>
             </div>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
-    <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">
@@ -69,10 +56,6 @@
                 <span>ESPAÑOLAS</span>
             </h1>
             <p class="hero-subtitle">Donde cada celebración es una obra de arte viviente</p>
-            <div class="hero-scroll">
-                <span>Explora</span>
-                <div class="scroll-arrow"></div>
-            </div>
         </div>
         <div class="hero-grid">
             <div class="grid-item" style="background: linear-gradient(45deg, #ff2e2e, #ff6b6b);"></div>
@@ -82,214 +65,85 @@
         </div>
     </section>
 
-    <!-- Fiestas Grid -->
     <section id="fiestas" class="fiestas-section">
         <div class="section-header">
             <h2>Fiestas <span class="accent">Emblemáticas</span></h2>
             <p class="section-subtitle">Tradición, color y pasión en cada rincón de España</p>
         </div>
-        
         <div class="fiestas-grid">
-            <!-- San Fermín -->
             <article class="fiesta-card" data-color="red">
-                <div class="card-header">
-                    <h3>San Fermín</h3>
-                    <span class="card-date">6-14 Julio</span>
-                </div>
-                <div class="card-content">
-                    <p>Los encierros de Pamplona, donde la adrenalina y la tradición se encuentran cada mañana.</p>
-                    <ul class="card-tags">
-                        <li>Pamplona</li>
-                        <li>Encierros</li>
-                        <li>Pañuelos rojos</li>
-                    </ul>
-                </div>
+                <div class="card-header"><h3>San Fermín</h3><span class="card-date">6-14 Julio</span></div>
+                <div class="card-content"><p>Los encierros de Pamplona, donde la adrenalina y la tradición se encuentran cada mañana.</p></div>
                 <div class="card-image" style="background: linear-gradient(45deg, #ff2e2e, #ff6b6b);"></div>
             </article>
-            
-            <!-- Fallas -->
             <article class="fiesta-card" data-color="yellow">
-                <div class="card-header">
-                    <h3>Fallas</h3>
-                    <span class="card-date">15-19 Marzo</span>
-                </div>
-                <div class="card-content">
-                    <p>Gigantescas esculturas de madera y cartón que arden en la noche valenciana.</p>
-                    <ul class="card-tags">
-                        <li>Valencia</li>
-                        <li>Ninots</li>
-                        <li>Fuegos artificiales</li>
-                    </ul>
-                </div>
+                <div class="card-header"><h3>Fallas</h3><span class="card-date">15-19 Marzo</span></div>
+                <div class="card-content"><p>Gigantescas esculturas que arden en la noche valenciana.</p></div>
                 <div class="card-image" style="background: linear-gradient(45deg, #ffd700, #ffed4e);"></div>
             </article>
-            
-            <!-- Semana Santa -->
             <article class="fiesta-card" data-color="purple">
-                <div class="card-header">
-                    <h3>Semana Santa</h3>
-                    <span class="card-date">Marzo/Abril</span>
-                </div>
-                <div class="card-content">
-                    <p>Procesiones solemnes con pasos religiosos que llenan las calles de emoción.</p>
-                    <ul class="card-tags">
-                        <li>Andalucía</li>
-                        <li>Procesiones</li>
-                        <li>Tradición religiosa</li>
-                    </ul>
-                </div>
+                <div class="card-header"><h3>Semana Santa</h3><span class="card-date">Marzo/Abril</span></div>
+                <div class="card-content"><p>Procesiones solemnes que llenan las calles de emoción.</p></div>
                 <div class="card-image" style="background: linear-gradient(45deg, #9d4edd, #c77dff);"></div>
             </article>
-            
-            <!-- Feria de Abril -->
             <article class="fiesta-card" data-color="blue">
-                <div class="card-header">
-                    <h3>Feria de Abril</h3>
-                    <span class="card-date">Abril</span>
-                </div>
-                <div class="card-content">
-                    <p>Sevilla se viste de faralaes, casetas y sevillanas durante una semana de fiesta.</p>
-                    <ul class="card-tags">
-                        <li>Sevilla</li>
-                        <li>Casetas</li>
-                        <li>Trajes de flamenca</li>
-                    </ul>
-                </div>
+                <div class="card-header"><h3>Feria de Abril</h3><span class="card-date">Abril</span></div>
+                <div class="card-content"><p>Sevilla se viste de faralaes, casetas y sevillanas.</p></div>
                 <div class="card-image" style="background: linear-gradient(45deg, #2e8bff, #6ba8ff);"></div>
             </article>
         </div>
     </section>
 
-    <!-- Tradiciones -->
     <section id="tradiciones" class="tradiciones-section">
         <div class="section-header">
             <h2>Tradiciones <span class="accent">Únicas</span></h2>
             <p class="section-subtitle">Costumbres que definen el carácter español</p>
         </div>
-        
         <div class="tradiciones-grid">
             <div class="tradicion-item">
-                <div class="tradicion-icon">🍷</div>
                 <h3>Vino y Convivencia</h3>
-                <p>En España, el vino es más que una bebida: es excusa para reunirse, conversar y celebrar.</p>
-                
-                <div class="porron-spotlight">
-                    <h4>El Porrón - Tradición Catalana</h4>
-                    <p>Un vaso único que permite compartir vino sin tocar los labios. Ahora puedes personalizarlo con tu foto.</p>
-                    <a href="../porron/" class="spotlight-link">Descubrir Porrón Personalizado →</a>
-                </div>
+                <p>En las fiestas españolas, el vino siempre está presente. Desde el porrón compartido en mesa hasta la bota de cuero en las romerías.</p>
             </div>
-            
             <div class="tradicion-item">
-                <div class="tradicion-icon">🕺</div>
                 <h3>Música y Baile</h3>
-                <p>Flamenco, sevillanas, jotas... Cada región tiene su ritmo y su forma de expresar alegría.</p>
+                <p>Flamenco, sevillanas, jotas... Cada región tiene su ritmo.</p>
             </div>
-            
             <div class="tradicion-item">
-                <div class="tradicion-icon">🍽️</div>
                 <h3>Gastronomía Festiva</h3>
-                <p>Tapas, paellas, churros con chocolate... La comida es parte esencial de cualquier celebración.</p>
-            </div>
-            
-            <div class="tradicion-item">
-                <div class="tradicion-icon">🎭</div>
-                <h3>Teatro Callejero</h3>
-                <p>Gigantes, cabezudos, representaciones históricas... El arte sale a la calle.</p>
+                <p>Tapas, paellas, churros... La comida es parte esencial.</p>
             </div>
         </div>
     </section>
 
-    <!-- Calendario -->
     <section id="calendario" class="calendario-section">
         <div class="section-header">
             <h2>Calendario <span class="accent">Festivo</span></h2>
-            <p class="section-subtitle">Planifica tu experiencia española</p>
         </div>
-        
         <div class="calendario-timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">Enero</div>
-                <div class="timeline-content">
-                    <h3>Reyes Magos</h3>
-                    <p>Cabalgatas por toda España el 5 de enero.</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-date">Marzo</div>
-                <div class="timeline-content">
-                    <h3>Fallas</h3>
-                    <p>Valencia en llamas del 15 al 19.</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-date">Abril</div>
-                <div class="timeline-content">
-                    <h3>Semana Santa & Feria</h3>
-                    <p>Procesiones y la Feria de Sevilla.</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-date">Julio</div>
-                <div class="timeline-content">
-                    <h3>San Fermín</h3>
-                    <p>Pamplona corre del 6 al 14.</p>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-date">Agosto</div>
-                <div class="timeline-content">
-                    <h3>Fiestas Patronales</h3>
-                    <p>Cada pueblo celebra a su santo.</p>
-                </div>
-            </div>
+            <div class="timeline-item"><div class="timeline-date">Enero</div><div class="timeline-content"><h3>Reyes Magos</h3></div></div>
+            <div class="timeline-item"><div class="timeline-date">Marzo</div><div class="timeline-content"><h3>Fallas</h3></div></div>
+            <div class="timeline-item"><div class="timeline-date">Abril</div><div class="timeline-content"><h3>Semana Santa & Feria</h3></div></div>
+            <div class="timeline-item"><div class="timeline-date">Julio</div><div class="timeline-content"><h3>San Fermín</h3></div></div>
         </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-section">
         <div class="cta-content">
-            <h2>¿Listo para vivir la fiesta?</h2>
-            <p>Lleva un pedazo de tradición española contigo. Un porrón personalizado es más que un vaso: es una experiencia, un recuerdo, una forma única de celebrar.</p>
-            <div class="cta-buttons">
-                <a href="../porron/" class="cta-primary">Porrón Personalizado</a>
-                <a href="../vino-espanol/" class="cta-secondary">Guía de Vinos</a>
-            </div>
+            <h2>Lleva la Fiesta a Casa</h2>
+            <p>Celebra como en España con productos tradicionales personalizados.</p>
+            <a href="https://www.etsy.com/shop/EngravedWithPhoto" class="cta-primary" target="_blank" rel="noopener">Tienda en Etsy →</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="glass-footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>Explora</h4>
-                <a href="#fiestas">Fiestas</a>
-                <a href="#tradiciones">Tradiciones</a>
-                <a href="#calendario">Calendario</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Proyectos</h4>
-                <a href="../porron/">Porrón Personalizado</a>
-                <a href="../vino-espanol/">Vinos Españoles</a>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Cultura</h4>
-                <p>Celebramos la riqueza cultural de España. Beber con moderación.</p>
-            </div>
+            <div class="footer-section"><h4>Explora</h4><a href="#fiestas">Fiestas</a><a href="#tradiciones">Tradiciones</a></div>
+            <div class="footer-section"><h4>Productos</h4><a href="https://www.etsy.com/shop/EngravedWithPhoto" target="_blank" rel="noopener">Tienda Etsy</a></div>
+            <div class="footer-section"><h4>Legal</h4><a href="aviso-legal.html">Aviso Legal</a></div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>© 2026 Fiestas Españolas · Tradición en cada celebración</p>
-            <p class="footer-note">Diseño moderno · Sin iconos chuchowych</p>
-        </div>
+        <div class="footer-bottom"><p>© 2026 Fiestas Españolas · Tradición en cada celebración</p></div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/cookies-banner.js"></script>
 </body>
 </html>

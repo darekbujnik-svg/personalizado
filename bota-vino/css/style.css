@@ -231,7 +231,7 @@ p {
     align-items: center;
     background: var(--bg);
     border: var(--border-thin) dashed var(--border);
-    padding: var(--space-md);
+    padding: var(--space-md); 
 }
 
 .placeholder-text {

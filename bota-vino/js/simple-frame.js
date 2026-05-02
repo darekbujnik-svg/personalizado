@@ -59,10 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
             width: 100%;
             height: 100%;
             background-image: url('images/1.webp');
-            background-size: 40%;
-            background-position: right;
-			background-margen:10%;
-            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position:right;
+			background-repeat: no-repeat;
             background-attachment: fixed;
             opacity: 0.9;
         }

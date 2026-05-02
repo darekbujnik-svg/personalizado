@@ -76,6 +76,11 @@ nav {
     letter-spacing: -0.5px;
 }
 
+.logo i {
+    font-weight: 400;
+    color: var(--accent);
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -247,8 +252,8 @@ section > p {
 .feature {
     background: white;
     padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    border: 1px solid var(--border);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -281,6 +286,7 @@ section > p {
 
 .gallery-item {
     border-radius: 12px;
+    border: 1px solid var(--border);
     overflow: hidden;
 }
 
@@ -311,8 +317,8 @@ section > p {
 .blog-card {
     background: white;
     padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    border: 1px solid var(--border);
 }
 
 .blog-card h3 {
@@ -351,6 +357,7 @@ section > p {
 .faq-item h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
+    color: var(--accent);
 }
 
 .faq-item p {
