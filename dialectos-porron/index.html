@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombres del Porrón | Cómo se dice en cada región</title>
+    <meta name="description" content="Descubre todos los nombres del porrón en España: porró, botijo de vino, jarro, porroi. Cómo se llama en Cataluña, Valencia, Aragón, Andalucía y más.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://dialectos.porronpersonalizado.es/">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Space Grotesk',sans-serif; background:#0f0f0f; color:#e0e0e0; }
+        .grain { position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; opacity:0.03; background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJmIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjk5IiBudW1PY3RhdmVzPSI2Ii8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI2YpIi8+PC9zdmc+); z-index:9999; }
+        .container { max-width:1100px; margin:auto; padding:2rem; }
+        header { padding:2rem 0; border-bottom:1px solid #222; margin-bottom:3rem; display:flex; justify-content:space-between; align-items:center; }
+        .logo { font-size:1.1rem; font-weight:600; color:#e0e0e0; }
+        .logo span { color:#d4a057; }
+        .main-title { font-size:clamp(2.5rem,5vw,4rem); font-weight:700; line-height:1.05; margin-bottom:1.5rem; }
+        .main-title span { display:block; color:#d4a057; font-style:italic; font-weight:400; font-size:clamp(1.2rem,2vw,1.8rem); font-family:'IBM Plex Mono',monospace; margin-top:0.8rem; }
+        .subtitle { font-size:1.05rem; color:#777; max-width:650px; line-height:1.7; margin-bottom:3rem; }
+        .map-container { position:relative; max-width:600px; margin:3rem auto; }
+        .region-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; margin:4rem 0; }
+        .region-card { background:#1a1a1a; border-radius:16px; padding:1.5rem; border:1px solid #222; position:relative; overflow:hidden; }
+        .region-card::before { content:''; position:absolute; top:0; left:0; width:100%; height:3px; }
+        .region-card[data-region="cat"]::before { background:#c00; }
+        .region-card[data-region="val"]::before { background:#ff8c00; }
+        .region-card[data-region="ara"]::before { background:#ce1126; }
+        .region-card[data-region="and"]::before { background:#007b3f; }
+        .region-card[data-region="eusk"]::before { background:#009b48; }
+        .region-card[data-region="mur"]::before { background:#c00; }
+        .region-card[data-region="can"]::before { background:#0073cf; }
+        .region-card[data-region="cast"]::before { background:#d4a057; }
+        .region-name { font-size:0.8rem; text-transform:uppercase; letter-spacing:1px; color:#888; margin-bottom:0.5rem; }
+        .region-dialect { font-size:2rem; font-weight:700; margin-bottom:0.3rem; }
+        .region-dialect .pt { font-family:'IBM Plex Mono',monospace; font-size:1rem; color:#d4a057; font-weight:400; }
+        .region-example { font-size:0.9rem; color:#666; line-height:1.6; margin-top:0.8rem; border-left:2px solid #333; padding-left:1rem; }
+        .region-example em { color:#d4a057; font-style:normal; }
+        .mini-map { display:grid; grid-template-columns:repeat(3,1fr); gap:0.5rem; max-width:400px; margin:2rem auto; }
+        .mini-block { background:#1a1a1a; border:1px solid #222; border-radius:8px; padding:0.8rem; text-align:center; cursor:default; transition:0.2s; }
+        .mini-block:hover { border-color:#d4a057; }
+        .mini-block .dial { font-weight:600; font-size:1.1rem; }
+        .mini-block .nn { font-size:0.65rem; color:#666; text-transform:uppercase; letter-spacing:0.5px; }
+        .fun-section { background:#1a1a1a; border-radius:16px; padding:2rem; margin:3rem 0; border:1px solid #222; }
+        .fun-section h2 { font-size:1.3rem; margin-bottom:1.5rem; color:#d4a057; }
+        .conversation { display:grid; gap:1.5rem; }
+        .conv-item { padding:1.2rem; background:#0f0f0f; border-radius:12px; border:1px solid #222; }
+        .conv-loc { font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:#888; }
+        .conv-dial { font-size:1.3rem; font-weight:600; margin:0.5rem 0; color:#d4a057; }
+        .conv-means { font-size:0.9rem; color:#888; line-height:1.6; }
+        .conv-spanish { font-size:0.85rem; color:#555; margin-top:0.3rem; }
+        .cta-section { text-align:center; padding:4rem 0; }
+        .cta-section h2 { font-size:2rem; margin-bottom:1rem; }
+        .cta-section p { color:#888; margin-bottom:2rem; }
+        .btn { display:inline-block; background:#d4a057; color:#0f0f0f; padding:0.9rem 2.5rem; text-decoration:none; border-radius:50px; font-weight:600; transition:0.3s; }
+        .btn:hover { background:#e8c870; transform:translateY(-2px); }
+        footer { border-top:1px solid #222; padding:3rem 0; margin-top:3rem; text-align:center; }
+        footer a { color:#d4a057; text-decoration:none; font-size:0.9rem; }
+        footer p { color:#555; font-size:0.8rem; margin-top:1rem; }
+        .accent-span { color:#d4a057; }
+        @media (max-width:600px) { .main-title { font-size:2rem; } .region-grid { grid-template-columns:1fr; } header { flex-direction:column; gap:0.5rem; text-align:center; } .mini-map { grid-template-columns:repeat(2,1fr); } }
+    </style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="container">
+    <header>
+        <div class="logo">NOMBRES <span>DEL PORRÓN</span></div>
+        <div style="font-size:0.85rem;color:#555;">glosario dialectal</div>
+    </header>
+
+    <div class="main-title">
+        ¿Cómo se llama el porrón<br>en cada región?
+        <span>/ mapa del porró, botijo de vino, jarro, porroi... /</span>
+    </div>
+    <p class="subtitle">
+        El porrón es uno de los objetos más <span class="accent-span">versátiles</span> del español: cada región tiene su nombre y su forma de usarlo. Recopilamos todos los dialectos, sus variantes y ejemplos de conversación real.
+    </p>
+
+    <!-- Mini-map blocks -->
+    <div class="mini-map">
+        <div class="mini-block"><div class="dial">porró</div><div class="nn">Cataluña</div></div>
+        <div class="mini-block"><div class="dial">porró</div><div class="nn">Valencia</div></div>
+        <div class="mini-block"><div class="dial">porrón</div><div class="nn">Aragón</div></div>
+        <div class="mini-block"><div class="dial">porrón</div><div class="nn">Castilla</div></div>
+        <div class="mini-block"><div class="dial">botijo de vino</div><div class="nn">Murcia</div></div>
+        <div class="mini-block"><div class="dial">bota de vino</div><div class="nn">Andalucía</div></div>
+        <div class="mini-block"><div class="dial">porroi</div><div class="nn">País Vasco</div></div>
+        <div class="mini-block"><div class="dial">porrón</div><div class="nn">Canarias</div></div>
+        <div class="mini-block"><div class="dial">jarra de vino</div><div class="nn">Extremadura</div></div>
+    </div>
+
+    <!-- Regiones detalle -->
+    <div class="region-grid">
+        <div class="region-card" data-region="cat">
+            <div class="region-name">Cataluña</div>
+            <div class="region-dialect">porró <span class="pt">[pu'ro]</span></div>
+            <div class="region-example">"Passa'm el <em>porró</em> que vull fer un glop de vi."</div>
+        </div>
+        <div class="region-card" data-region="val">
+            <div class="region-name">Valencia / Baleares</div>
+            <div class="region-dialect">porró <span class="pt">[po'rro]</span></div>
+            <div class="region-example">"A la falla, el <em>porró</em> sempre va ple de vi negre."</div>
+        </div>
+        <div class="region-card" data-region="ara">
+            <div class="region-name">Aragón</div>
+            <div class="region-dialect">porrón <span class="pt">[po'ron]</span></div>
+            <div class="region-example">"Dame el <em>porrón</em> que esto no se bebe solo."</div>
+        </div>
+        <div class="region-card" data-region="cast">
+            <div class="region-name">Castilla y León</div>
+            <div class="region-dialect">porrón <span class="pt">[po'ron]</span></div>
+            <div class="region-example">"En la boda, los abuelos bebían de un <em>porrón</em> como antaño."</div>
+        </div>
+        <div class="region-card" data-region="and">
+            <div class="region-name">Andalucía</div>
+            <div class="region-dialect">bota de vino <span class="pt">/ porrón</span></div>
+            <div class="region-example">"Tráeme la <em>bota</em>, que esto es pa beber bien."</div>
+        </div>
+        <div class="region-card" data-region="mur">
+            <div class="region-name">Murcia</div>
+            <div class="region-dialect">botijo de vino <span class="pt">[bo'tixo]</span></div>
+            <div class="region-example">"Pa la huerta, un <em>botijo</em> de vino es lo mejor."</div>
+        </div>
+        <div class="region-card" data-region="eusk">
+            <div class="region-name">País Vasco</div>
+            <div class="region-dialect">porroi <span class="pt">[po'roi]</span></div>
+            <div class="region-example">"Auzoan, <em>porroi</em> batetik edaten dute ardoa."</div>
+        </div>
+        <div class="region-card" data-region="can">
+            <div class="region-name">Canarias</div>
+            <div class="region-dialect">porrón de vino</div>
+            <div class="region-example">"Un <em>porrón</em> pa la parranda, que hoy hay fiesta."</div>
+        </div>
+    </div>
+
+    <!-- Conversaciones -->
+    <div class="fun-section">
+        <h2>🇪🇸 Cómo se usa en conversación</h2>
+        <div class="conversation">
+            <div class="conv-item">
+                <div class="conv-loc">📍 Barcelona · bar de Gràcia</div>
+                <div class="conv-dial">"Passa'm el porró!"</div>
+                <div class="conv-means">Pásame el porrón — el gesto más típico en una comida con amigos.</div>
+                <div class="conv-spanish">🇪🇸 "Pásame el porrón"</div>
+            </div>
+            <div class="conv-item">
+                <div class="conv-loc">📍 Valencia · falla</div>
+                <div class="conv-dial">"El porró, sempre ple!"</div>
+                <div class="conv-means">El porrón, siempre lleno — lema no oficial en las fallas.</div>
+                <div class="conv-spanish">🇪🇸 "El porrón siempre lleno"</div>
+            </div>
+            <div class="conv-item">
+                <div class="conv-loc">📍 Pamplona · San Fermín</div>
+                <div class="conv-dial">"Un porrón pa la cuadrilla!"</div>
+                <div class="conv-means">Un porrón para el grupo — tradición de compartir.</div>
+                <div class="conv-spanish">🇪🇸 "Un porrón para el grupo"</div>
+            </div>
+            <div class="conv-item">
+                <div class="conv-loc">📍 País Vasco · romería</div>
+                <div class="conv-dial">"Porroi bat, mesedez!"</div>
+                <div class="conv-means">Un porrón, por favor — en euskera en las fiestas populares.</div>
+                <div class="conv-spanish">🇪🇸 "Un porrón, por favor"</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+        <h2>¿Quieres tu propio <span class="accent-span">porrón</span>?</h2>
+        <p>Personalízalo con tu foto, nombres o diseño. Tradición española hecha recuerdo.</p>
+        <a href="https://www.etsy.com/es/listing/597121131/porron-de-vino-personalizado-grabado-con-foto" class="btn" target="_blank" rel="noopener">Comprar Porrón Personalizado →</a>
+    </div>
+
+    <footer>
+        <a href="https://porronpersonalizado.es/" target="_blank" rel="noopener">Porrón Personalizado</a> ·
+        <a href="https://boda.porronpersonalizado.es/" target="_blank" rel="noopener">Para Bodas</a> ·
+        <a href="aviso-legal.html">Aviso Legal</a>
+        <p>© 2026 Nombres del Porrón · Proyecto lingüístico y cultural</p>
+    </footer>
+</div>
+
+<script>
+(function(){
+    if(localStorage.getItem('cookies_accepted')) return;
+    var s=document.createElement('style');
+    s.textContent='#cb{position:fixed;left:1rem;top:33vh;background:#1a1a1a;color:#e0e0e0;padding:1.2rem;z-index:99999;border:1px solid #333;border-radius:16px;max-width:300px;font-size:0.85rem;line-height:1.5;font-family:Space Grotesk,sans-serif;box-shadow:0 10px 40px rgba(0,0,0,0.5);}';
+    s.textContent+='#cb button{background:#d4a057;color:#0f0f0f;border:none;padding:0.5rem 1.5rem;border-radius:50px;cursor:pointer;font-weight:600;margin-right:0.5rem;}';
+    s.textContent+='#cb a{color:#888;}';
+    document.head.appendChild(s);
+    var b=document.createElement('div');b.id='cb';
+    b.innerHTML='<p style="margin:0 0 0.8rem 0;">Usamos cookies técnicas.</p><button id="ca">Aceptar</button><a href="aviso-legal.html">Info</a>';
+    document.body.appendChild(b);
+    document.getElementById('ca').onclick=function(){localStorage.setItem('cookies_accepted','true');b.style.display='none';};
+})();
+</script>
+</body>
+</html>
