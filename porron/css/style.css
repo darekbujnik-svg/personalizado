@@ -585,3 +585,50 @@ footer {
         text-align: center !important;
     }
 }
+
+/* Mobile: fixed footer (whatsapp-fixed-v2) compact */
+@media (max-width: 768px) {
+    body .brutal-input-v2 {
+        font-size: 0.7rem !important;
+        min-height: 32px !important;
+        padding: 0.3rem 0.5rem !important;
+    }
+    body .btn-whatsapp-send-v2,
+    body .btn-whatsapp-open-v2 {
+        font-size: 0.6rem !important;
+        padding: 0.3rem 0.5rem !important;
+    }
+    body .etsy-link-v2 {
+        font-size: 0.65rem !important;
+        padding: 0.3rem !important;
+    }
+    body .phone-v2 {
+        font-size: 0.65rem !important;
+    }
+    body .whatsapp-container-v2 {
+        gap: 0.3rem !important;
+    }
+    body #brutal-footer-fixed-v2 {
+        min-height: auto !important;
+    }
+    body .footer-content-v2 {
+        padding: 0.3rem !important;
+        min-height: 44px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body .whatsapp-buttons-v2 {
+        flex-direction: column !important;
+        gap: 0.2rem !important;
+    }
+    body .btn-whatsapp-send-v2,
+    body .btn-whatsapp-open-v2 {
+        font-size: 0.55rem !important;
+        padding: 0.2rem 0.4rem !important;
+    }
+    body .etsy-link-v2 {
+        font-size: 0.6rem !important;
+        letter-spacing: 0.5px !important;
+    }
+}
