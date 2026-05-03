@@ -14,10 +14,13 @@
     
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Space Grotesk',sans-serif; background:#0f0f0f; color:#e0e0e0; }
+        body { font-family:'Space Grotesk',sans-serif; background:#0f0f0f; color:#e0e0e0; } 
+        .nav-links { display:flex; gap:1.3rem; } 
+        .nav-links a { color:#888; text-decoration:none; font-size:0.85rem; transition:0.2s; } 
+        .nav-links a:hover { color:#d4a057; }
         .grain { position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; opacity:0.03; background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJmIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjk5IiBudW1PY3RhdmVzPSI2Ii8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI2YpIi8+PC9zdmc+); z-index:9999; }
         .container { max-width:1100px; margin:auto; padding:2rem; }
-        header { padding:2rem 0; border-bottom:1px solid #222; margin-bottom:3rem; display:flex; justify-content:space-between; align-items:center; }
+        header { padding:1.5rem 0; border-bottom:1px solid #222; margin-bottom:3rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; }
         .logo { font-size:1.1rem; font-weight:600; color:#e0e0e0; }
         .logo span { color:#d4a057; }
         .main-title { font-size:clamp(2.5rem,5vw,4rem); font-weight:700; line-height:1.05; margin-bottom:1.5rem; }
@@ -70,7 +73,11 @@
 <div class="container">
     <header>
         <div class="logo">NOMBRES <span>DEL PORRÓN</span></div>
-        <div style="font-size:0.85rem;color:#555;">glosario dialectal</div>
+        <div class="nav-links">
+            <a href="https://porronpersonalizado.es/" target="_blank" rel="noopener">Porrón</a>
+            <a href="https://boda.porronpersonalizado.es/" target="_blank" rel="noopener">Boda</a>
+            <a href="https://www.etsy.com/es/listing/597121131/porron-de-vino-personalizado-grabado-con-foto" target="_blank" rel="noopener" style="color:#d4a057;">Comprar</a>
+        </div>
     </header>
 
     <div class="main-title">
