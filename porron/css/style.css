@@ -632,3 +632,39 @@ footer {
         letter-spacing: 0.5px !important;
     }
 }
+
+/* Blog date badge */
+.blog-date {
+    display: inline-block;
+    font-size: 0.75em;
+    color: #888;
+    font-family: monospace;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.blog-card {
+    position: relative;
+    padding-top: 5px;
+}
+
+.blog-all-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #c41e3a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 6px;
+    transition: background 0.3s;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-all-link:hover {
+    background: #8b0000;
+}
