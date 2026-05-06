@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" fill="#faf8f5" rx="16" ry="16"/>
-  <path d="M40,20 Q50,10 60,20 L65,60 Q60,80 50,85 Q40,80 35,60 Z" fill="none" stroke="#d4a057" stroke-width="5"/>
-  <path d="M47,85 L50,93 L53,85" stroke="#d4a057" stroke-width="3" fill="none"/>
-  <path d="M30,75 L70,75" stroke="#d4a057" stroke-width="2"/>
-  <text x="50" y="70" text-anchor="middle" font-size="18" fill="#d4a057" font-family="serif">❤️</text>
-</svg>
